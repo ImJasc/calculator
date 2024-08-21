@@ -44,3 +44,24 @@ body{
 .display#output{
     display: none;
 }
+
+.container#buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.container#row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 4px;
+}
+
+.container#lastrow{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
