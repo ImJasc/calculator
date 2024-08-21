@@ -1,0 +1,25 @@
+body{
+    background: #EAEFBD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container#display{
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 17px;    
+    height: 100%;
+    width: 100%;
+}
+
+.display{
+    text-align: right;
+    padding: 4px;
+    box-sizing: border-box;
+}
+
+.display#output{
+    display: none;
+}
