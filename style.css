@@ -1,5 +1,5 @@
 body{
-    background: #EAEFBD;
+    background: #c9e4ca;
     display: flex;    
     justify-content: center;
     align-items: center;
@@ -17,8 +17,8 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 4px solid #272716;
-    background: #37371F;
+    border: 4px solid #172026;
+    background: #364958 ;
     border-radius: 16px;
     padding: 20px;
 }
@@ -30,12 +30,15 @@ body{
     margin-bottom: 17px;    
     height: 100%;
     width: 100%;
+    border-radius: 4px;    
 }
 
 .display{
     text-align: right;
     padding: 4px;
     box-sizing: border-box;
+    border: 4px solid #f8f8f2;
+    border-radius: 4px;
 }
 
 .display#output{
