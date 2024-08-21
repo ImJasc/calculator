@@ -1,8 +1,16 @@
 body{
     background: #EAEFBD;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+}
+
+.container#calculator{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    min-height: 900px;
 }
 
 .container#display{
