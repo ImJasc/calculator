@@ -21,6 +21,7 @@ body{
     background: #0c0d1d ;
     border-radius: 16px;
     padding: 20px;
+    box-shadow: 10px 10px 5px #0c101d;
 }
 
 .container#display{
@@ -30,7 +31,8 @@ body{
     margin-bottom: 25px;    
     height: 100%;
     width: 100%;
-    border-radius: 4px;  
+    border-radius: 4px; 
+    box-shadow: 4px 4px 5px #7a7a7a; 
 }
 
 .display{
@@ -84,7 +86,8 @@ body{
     height: 80px;
     border-radius: 16px;
     font-size: 30px;
-    background: #737373 ;
+    background: #737373;
+    box-shadow: 1px 1px 5px #7a7a7a;
 }
 
 #equals{
@@ -92,6 +95,7 @@ body{
     background: #f2a918;
     color: #172527;
     width: 168px;
+    box-shadow: 2px 2px 5px #e79f0d;
 }
 
 #clear, #erase, #percent, #divide, #multiply, #minus, #add{
