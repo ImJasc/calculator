@@ -34,6 +34,18 @@ btnClear.addEventListener("click", cleanScreen =>{
     operator = null;
 })
 
+btnErase.addEventListener("click", eraseCharacter =>{    
+    if (dspInput.textContent[dspInput.textContent.length-1] === '.') {
+        isDecimal = false;
+        dspInput.innerText = dspInput.innerText.slice(0, -1);
+    }else if (dspInput.textContent.length === 1){
+        dspInput.innerText = '0';
+    }else{
+        dspInput.innerText = dspInput.innerText.slice(0, -1);
+    } 
+        
+})
+
 function operate (operator, numOne, numTwo){
     switch (operator){
         case '*':
