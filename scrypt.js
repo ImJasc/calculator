@@ -26,6 +26,14 @@ btnDecimal.addEventListener("click", recordDecimal =>{
 })
 
 
+btnClear.addEventListener("click", cleanScreen =>{
+    dspInput.innerText = '0';
+    numberOne = null;
+    numberTwo = null;
+    isDecimal = false;
+    operator = null;
+})
+
 function operate (operator, numOne, numTwo){
     switch (operator){
         case '*':
