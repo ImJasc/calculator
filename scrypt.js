@@ -1,4 +1,4 @@
-let total = 0, numberOne, numberTwo = null;
+let total = 0, numberOne, numberTwo = null, operator = null, isDecimal = false;
 const btnNumbers = document.querySelectorAll("button#number");
 const dspInput = document.querySelector("div#input");
 const dspOutput = document.querySelector("div#output");
@@ -17,6 +17,14 @@ btnNumbers.forEach((button) => button.addEventListener("click", recordNumber => 
         dspInput.innerText += button.innerText;
     }
 }));
+
+btnDecimal.addEventListener("click", recordDecimal =>{
+    if(isDecimal === false){
+        isDecimal = true;
+        dspInput.innerText += btnDecimal.innerText;        
+    }
+})
+
 
 function operate (operator, numOne, numTwo){
     switch (operator){
