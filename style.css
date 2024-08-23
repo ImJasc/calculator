@@ -39,16 +39,18 @@ body{
     padding: 4px;
     box-sizing: border-box;
     border: 0px solid;
-    border-radius: 8px;
-    height: 80px;
-    font-size: 70px;    
-    align-items: center;
-    justify-content: right;
-    box-shadow: inset 2px 3px 5px 0px #0c0d1d;;
+    border-radius: 8px;       
+    justify-content: right; 
+    font-size: 200%; 
+    font-family: 'Roboto', Arial, sans-serif;
+    word-wrap: break-word;
+    word-break: break-all;
+    width: 336px;
+    text-align: right;
 }
 
 .display#output{
-    display: none;
+    display: flex;    
 }
 
 .container#buttons{
@@ -100,7 +102,7 @@ body{
     box-shadow: 2px 2px 5px #e79f0d;
 }
 
-#clear, #erase, #percent, #divide, #multiply, #minus, #add{
+#clear, #erase, #percent, #operation{
     color: #f2a918;
 }
 

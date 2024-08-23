@@ -1,13 +1,23 @@
 let total = 0, numberOne, numberTwo = null;
-const btnNumbers = document.getElementById("number");
-const dspInput = document.getElementById("input");
-const dspOutput = document.getElementById("output");
-const btnClear = document.getElementById("clear");
-const btnErase = document.getElementById("erase");
-const btnPercent = document.getElementById("percent");
-const btnOperation = document.getElementById("operation");
-const btnDecimal = document.getElementById("decimal");
-const btnEqual = document.getElementById("equal");
+const btnNumbers = document.querySelectorAll("button#number");
+const dspInput = document.querySelector("div#input");
+const dspOutput = document.querySelector("div#output");
+const btnClear = document.querySelector("button#clear");
+const btnErase = document.querySelector("button#erase");
+const btnPercent = document.querySelector("button#percent");
+const btnOperation = document.querySelectorAll("button#operation");
+const btnDecimal = document.querySelector("button#decimal");
+const btnEqual = document.querySelector("button#equal");
+
+btnNumbers.forEach((button) => button.addEventListener("click", recordNumber => {
+    if (dspInput.innerText === '0') {
+        dspInput.innerText = '';
+        dspInput.innerText += button.innerText;
+    }else{
+        dspInput.innerText += button.innerText;
+    }
+}));
+
 function operate (operator, numOne, numTwo){
     switch (operator){
         case '*':
