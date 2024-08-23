@@ -46,6 +46,7 @@ body{
     word-wrap: break-word;
     word-break: break-all;
     width: 336px;
+    min-height: 40px;
     text-align: right;
 }
 
