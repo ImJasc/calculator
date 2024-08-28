@@ -45,8 +45,7 @@ body{
     font-family: 'Roboto', Arial, sans-serif;
     word-wrap: break-word;
     word-break: break-all;
-    width: 336px;
-    min-height: 40px;
+    width: 336px;    
     text-align: right;
 }
 
